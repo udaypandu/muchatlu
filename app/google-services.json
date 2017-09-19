@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "134300907714",
+    "firebase_url": "https://muchatlu-400a7.firebaseio.com",
+    "project_id": "muchatlu-400a7",
+    "storage_bucket": "muchatlu-400a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134300907714:android:e3cae859d9423fe1",
+        "android_client_info": {
+          "package_name": "com.nevexa.muchatlu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134300907714-oj3c2mta6mfp5tof383hh6lhgrppr3oe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4uDDTgDmVQGb8cB52jxigjRhl4so64Es"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

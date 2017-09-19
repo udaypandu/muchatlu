@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'nevexa digital private limited'
+            keyPassword 'KW@2017!#'
+            storeFile file('E:\\KapuWelfare\\KapuKeystore\\kwa.jks')
+            storePassword 'KW@2017!#'
+        }
+    }
     compileSdkVersion 25
     buildToolsVersion "26.0.1"
     defaultConfig {
@@ -14,7 +22,12 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            debuggable true;
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            debuggable true;
         }
     }
 }
@@ -26,5 +39,10 @@ dependencies {
     })
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.android.support:appcompat-v7:25.3.1'
+
+    compile 'com.google.firebase:firebase-ads:10.2.6'
+    compile 'com.google.firebase:firebase-messaging:10.2.6'
+    compile 'com.firebase:firebase-jobdispatcher:0.5.2'
     testCompile 'junit:junit:4.12'
 }
+apply plugin: 'com.google.gms.google-services'
