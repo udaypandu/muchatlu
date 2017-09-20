@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'nevexa digital private limited'
             keyPassword 'KW@2017!#'
-            storeFile file('E:\\KapuWelfare\\KapuKeystore\\kwa.jks')
+            storeFile file('D:\\muchatlu\\Keystore\\kwa.jks')
             storePassword 'KW@2017!#'
         }
     }
@@ -15,14 +15,14 @@ android {
         applicationId "com.nevexa.muchatlu"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName "1.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
             minifyEnabled false
-            debuggable true;
+            debuggable false;
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.config
         }
